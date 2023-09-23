@@ -86,6 +86,7 @@ $row = mysqli_fetch_assoc($result);
         }
         ?>
         <?php
+        //display submit button only if any task exists 
             if (!empty($num2)) {
                 echo '<input type="submit" name="submit" value="Submit" class="btn-sub">';
             }
